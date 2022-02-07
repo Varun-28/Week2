@@ -1,0 +1,48 @@
+body {
+    font-family: sans-serif;
+  }
+  html {
+    font-size: 62.5%;
+  }
+  #app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #app h2 {
+    font-size: 2.4rem;
+  }
+  .container {
+    font-size: 1.5rem;
+  }
+  ul li {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* tab type 1 css */
+  
+  .tab1 ul {
+    padding: 0;
+    display: flex;
+    width: 35rem;
+    overflow-x: auto;
+  }
+  .tab1 ul li {
+    cursor: pointer;
+    background-color: lightgray;
+    padding: 2rem;
+  }
+  .tab1 ul li:hover {
+    background-color: lightblue;
+  }
+  .active {
+    border-bottom: solid 0.5rem;
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  

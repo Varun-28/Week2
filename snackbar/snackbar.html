@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css link -->
+    <link rel="stylesheet" href="./snackbar.css">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
+
+    <!-- font-awesome cdn -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+    <title>Snackbar Component</title>
+</head>
+<body>
+    <div id="app">
+        <div class="container snackbar1">
+          <p>Can't send photo. Retry in 5 seconds.</p>
+          <button class="retry">RETRY</button>
+          <button class="exit" value="1"><i class="fas fa-times" value="1"></i></button>
+        </div>
+  
+        <div class="container snackbar2">
+          <p>Your photo has been archived.</p>
+          <button class="retry">UNDO</button>
+          <button class="exit" value="2"><i class="fas fa-times" value="2"></i></button>
+        </div>
+  
+        <div class="container snackbar3">
+          <p>
+            This item already has the label "travel". You can add a new label.
+          </p>
+          <div class="btn-right">
+            <button class="retry">ADD A NEW LABEL</button>
+            <button class="exit" value="3"><i class="fas fa-times" value="3"></i></button>
+          </div>
+        </div>
+  
+        <button class="btn-baseline btn" value="1">BASELINE</button>
+        <button class="btn-leading btn" value="2">LEADING</button>
+        <button class="btn-stacked btn" value="3">STACKED</button>
+      </div>
+
+      <script src="./snackbar.js"></script>
+</body>
+</html>

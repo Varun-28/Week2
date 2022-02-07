@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css link -->
+    <link rel="stylesheet" href="./badge.css">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
+
+    <!-- font-awesome cdn -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+    <title>Badge Component</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Badge Components</h2>
+        <div class="text">
+            <p>Text with a badge. <span>5</span></p>
+          </div>
+    
+          <div class="text text2">
+            <p>Text with a large badge. <span>10</span></p>
+          </div>
+    
+          <div class="text button1">
+            <p>
+              Button with a badge on left. <button><span>6</span>Action</button>
+            </p>
+          </div>
+    
+          <div class="text button2 button1">
+            <p>
+              Button toggles badge visibility.
+              <button id="hide"><span class="hide-badge">6</span>Hide</button>
+            </p>
+          </div>
+    
+          <div class="text button2 button1 icon">
+            <p>
+              Icon with a badge. <i class="fas fa-home"><span>8</span></i>
+            </p>
+          </div>
+    </div>
+    <script src="./badge.js"></script>
+</body>
+</html>

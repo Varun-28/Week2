@@ -1,0 +1,92 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+:root{
+    --badge-color: #6200ee;
+    --badge-text: #fff;
+    --btn-bg: #FF4081;
+    --shadow-color : #808080;
+    --text-black: #000
+}
+.container{
+    font-family: 'Roboto', sans-serif;
+    padding: 2rem;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 1rem;
+}
+.hide {
+    visibility: hidden;
+}
+/* badge type1  */
+.container h2{
+    font-size: 2.4rem;
+    text-align: center;
+}
+.text p {
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+  }
+  .text span {
+    background-color: var(--badge-color);
+    color: var(--badge-text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    position: relative;
+    bottom: 1rem;
+    right: 0.5rem;
+    box-shadow: 2px -2px 5px var(--shadow-color);
+  }
+  /* badge type 2  */
+  .text2 span {
+    height: 3rem;
+    width: 3rem;
+    bottom: 1.5rem;
+    right: 1.2rem;
+  }
+  /* badge type 3  */
+  
+.container button {
+    cursor: pointer;
+    padding: 0.5rem;
+    font-size: 2rem;
+    display: flex;
+    color: var(--badge-text);
+    background-color: var(--btn-bg);
+    position: relative;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 5px var(--shadow-color);
+    margin: auto 0.5rem;
+}
+  .button1 span {
+    position: absolute;
+    bottom: 2.5rem;
+    right: 5rem;
+  }
+  
+  /* badge type 4 */
+#hide{
+      background-color: var(--badge-text);
+      color: var(--text-black);
+  }
+  .button2 span {
+    right: -1rem;
+  }
+  /* badge type 5 */
+  .icon i {
+    position: relative;
+  }
+  .icon i span {
+    bottom: 1.5rem;
+  }

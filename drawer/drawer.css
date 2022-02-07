@@ -1,0 +1,70 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+        font-size: 62.5%;
+}
+:root{
+    --text-black : black;
+    --text-grey : gray;
+    --btn-color : #6200EE;
+    --hover-btn-color : #E6D7FC;
+    --hover-bg-color : #F5F5F5;
+    --bg-color : #fff;
+}
+.container{
+        font-family: 'Roboto', sans-serif;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+.container h2{
+    font-size: 2.4rem;
+}
+/* drawer */
+.drawer{
+    width: 25rem;
+    height: auto;
+    padding: 0 1rem;
+    box-shadow: 0px 2px 3px 0px var(--text-grey);
+}
+.drawer--title h4{
+    font-size: 2rem;
+}
+.drawer--title h3{
+    font-weight: 100;
+    font-size: 1.4rem;
+    color: var(--text-grey);
+    margin-top: -2rem;
+}
+.drawer--option{
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+.drawer--option h3{
+    font-size: 1.5rem;
+}
+.drawer--option:hover{
+    background-color: var(--hover-bg-color);
+    cursor: pointer;
+}
+.drawer--option i{
+    font-size: 1.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 2rem;
+    color: var(--text-grey);
+}
+.drawer--active, .drawer--active i{
+    color: var(--btn-color);
+    background-color: var(--hover-btn-color);
+}
+.drawer--active:hover{
+    background-color: var(--hover-btn-color);
+}

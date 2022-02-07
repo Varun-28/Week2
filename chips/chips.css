@@ -1,0 +1,87 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+:root{
+    --text-black : #000;
+    --text-white : #fff;
+    --bg-color1 : #6200EE;
+    --hover-bg-color2 : #5503c9;
+    --hover-bg-color1 : #808080;
+    --bg-color2 : #c9c9c9;
+}
+.container,.chips-form{
+    font-family: 'Roboto', sans-serif;
+    padding: 2rem;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 2rem;
+    align-items: flex-start;
+}
+h2{
+    font-size: 2.4rem;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+h3{
+    font-size: 2rem;
+}
+/* chips */
+.chip{
+    font-size: 1.4rem;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+.chip1, .chip2{
+    background-color: var(--bg-color2);
+}
+.chip1:hover, .chip2:hover{
+    background-color: var(--hover-bg-color1);
+    cursor: pointer;
+}
+.chip2{
+    display: flex;
+    align-items: center;
+}
+.chip2 i{
+    margin-left: 1rem;
+}
+.chip3{
+    background-color: var(--bg-color1);
+    color: var(--text-white);
+}
+.chip3:hover{
+    background-color: var(--hover-bg-color2);
+    cursor: pointer;
+}
+
+/* input and output css */
+.chips-form{
+    margin: 1rem;
+    border: dashed 2px var(--hover-bg-color1);
+    border-radius: 1rem;
+    min-height: 15rem;
+}
+.chips-form label{
+    font-size: 1.5rem;
+    color: var(--text-black);
+}
+.chips-form input{
+    width: 30vw;
+    padding: 1rem;
+    border: solid 2px var(--hover-bg-color1);
+    border-radius: 1rem;
+    outline: none;
+}
+.chips-form input:focus{
+    border: solid 2px var(--text-black);
+}
+.output{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}

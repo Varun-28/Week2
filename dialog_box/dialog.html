@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css link -->
+    <link rel="stylesheet" href="./dialog.css">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
+
+    <!-- font-awesome cdn -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+    <title>Dialog Component</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Dialog Component</h2>
+        <button id="alert" class="btn">ALERT</button>
+        <button id="simple" class="btn">SIMPLE</button>
+        <button id="confirm" class="btn">CONFIRMATION</button>
+
+        <div class="dialog dialog1">
+            <div class="type1">
+                <h3>Dialog header</h3>
+                <p>Dialog body text</p>
+                <div class="btn-group">
+                    <button class="btn2" value="1">Action 1</button>
+                    <button class="btn2" value="1">Action 2</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="dialog dialog2">
+            <div class="type1 type2">
+                <h3>Dialog header</h3>
+                <div id="items1">
+                    <button class="btn3 btn2" value="2"><i class="fas fa-user-circle"></i> Item 1</button>
+                    <button class="btn3 btn2" value="2"><i class="fas fa-user-circle"></i> Item 2</button>
+                    <button class="btn3 btn2" value="2"><i class="fas fa-user-circle"></i> Item 3</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="dialog dialog3">
+            <div class="type1 type3">
+                <h3>Dialog header</h3>
+                <div class="items2">
+                    <label for="rd1"><input type="radio" id="rd1" name="item" checked>Item 1</label>
+                    <label for="rd2"><input type="radio" id="rd2" name="item">Item 2</label>
+                    <label for="rd3"><input type="radio" id="rd3" name="item">Item 3</label>
+                    <label for="rd4"><input type="radio" id="rd4" name="item">Item 4</label>
+                    <label for="rd5"><input type="radio" id="rd5" name="item">Item 5</label>
+                </div>
+                <div  class="btn-group">
+                    <button class="btn2" value="3">Action 1</button>
+                    <button class="btn2" value="3">Action 2</button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <script src="./dialog.js"></script>
+</body>
+</html>
